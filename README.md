@@ -57,7 +57,7 @@ python /global/bio/projets/GAMeR/Nicolas-Radomski/PairedEndVariant/VariantAlignm
 ```
 sbatch bash_VariantAssemblyConda.sh
 ```
-# Checking of the number of filtrated variants
+# Checking of the amount of filtrated variants
 ## 1/ Single Nucleotide Polymorphisms (SNPs)
 ```
 grep -v '#' /global/bio/projets/GAMeR/Nicolas-Radomski/PairedEndVariant/VariantCalling/7_alignment/filtered.snps.vcf | wc -l
