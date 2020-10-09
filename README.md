@@ -12,7 +12,7 @@ The main script VariantAlignment.py and module genomic.py (version 20201006) wer
 - python/3.8.5/h1103e12_9_cpython/conda-forge
 - biopython/1.78/py38h1e0a361_0/conda-forge
 - gatk4/4.1.8.1/py38_0/bioconda
- Building of the Conda Environment PairedEndVariantCalling
+# Building of the Conda Environment PairedEndVariantCalling
 ## 1/ From available targeted Conda packages
 ```
 conda activate
