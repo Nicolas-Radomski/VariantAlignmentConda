@@ -37,8 +37,8 @@ conda update -c conda-forge biopython
 conda install -c bioconda gatk4
 conda update -c bioconda gatk4
 ```
-# Lunching of the script PairedEndVariantConda.py
-## 1/ prepare a single command in a Bash script (bash_VariantAssemblyConda.sh)
+# Lunching of the script VariantAlignmentConda.py
+## 1/ prepare a single command in a Bash script (bash_VariantAlignmentConda.sh)
 ```
 #!/bin/bash
 #SBATCH -p Research
@@ -53,9 +53,9 @@ python /global/bio/projets/GAMeR/Nicolas-Radomski/PairedEndVariant/VariantAlignm
  -ind /global/bio/projets/GAMeR/Nicolas-Radomski/PairedEndVariant/VariantCalling/1_reference/Enteritidis_P125109.fasta \
  -call /global/conda/envs/PairedEndVariantCalling/bin/gatk
 ```
-## 2/ run the Bash script bash_VariantAssemblyConda.sh with sbatch
+## 2/ run the Bash script bash_VariantAlignmentConda.sh with sbatch
 ```
-sbatch bash_VariantAssemblyConda.sh
+sbatch bash_VariantAlignmentConda.sh
 ```
 # Checking of the amount of filtrated variants
 ## 1/ Single Nucleotide Polymorphisms (SNPs)
