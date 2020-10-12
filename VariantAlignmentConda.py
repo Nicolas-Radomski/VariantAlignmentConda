@@ -20,19 +20,19 @@
 #### Execute /global/conda/envs/PairedEndVariantCalling/bin/gatk --java-options "-Xms50g -Xmx50g" MergeVcfs -I /global/bio/projets/GAMeR/Nicolas-Radomski/PairedEndVariant/VariantCalling/7_alignment/filtered.snps.vcf -I /global/bio/projets/GAMeR/Nicolas-Radomski/PairedEndVariant/VariantCalling/7_alignment/filtered.indels.vcf -O /global/bio/projets/GAMeR/Nicolas-Radomski/PairedEndVariant/VariantCalling/7_alignment/filtered.snps.indels.vcf
 
 '''
-#### exemple of Bash command (bash_PairedEndVariantConda.sh) ####
+#### exemple of Bash command (bash_VariantAlignmentConda.sh) ####
 #!/bin/bash
 #SBATCH -p Research
 #SBATCH -o %x.%N.%j.out
 #SBATCH -e %x.%N.%j.err
 #SBATCH --cpus-per-task=1
-#SBATCH --job-name=test-20201012
+#SBATCH --job-name=test-20201006
 source /global/conda/bin/activate;conda activate PairedEndVariantCalling; \
-python /global/bio/projets/GAMeR/Nicolas-Radomski/PairedEndVariant/VCFtoPseudoGenome.py \
-	-i /global/bio/projets/GAMeR/Nicolas-Radomski/PairedEndVariant/VariantCalling/7_alignment/filtered.snps.indels.vcf \
-	-ref /global/bio/projets/GAMeR/Nicolas-Radomski/PairedEndVariant/VariantCalling/1_reference/Enteritidis_P125109.fasta \
-	-o /global/bio/projets/GAMeR/Nicolas-Radomski/PairedEndVariant/VariantCalling/8_matrix/test \
-	--NoINDELs
+python /global/bio/projets/GAMeR/Nicolas-Radomski/PairedEndVariant/VariantAlignmentConda.py \
+ -r VariantCalling \
+ -gvcf /global/bio/projets/GAMeR/Nicolas-Radomski/PairedEndVariant/VariantCalling/5_calling \
+ -ind /global/bio/projets/GAMeR/Nicolas-Radomski/PairedEndVariant/VariantCalling/1_reference/Enteritidis_P125109.fasta \
+ -call /global/conda/envs/PairedEndVariantCalling/bin/gatk
 
 #### exemple of Bash command execution ####
 sbatch bash_VariantAlignmentConda.sh
