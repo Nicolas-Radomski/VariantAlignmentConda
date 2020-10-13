@@ -1,14 +1,14 @@
 # Usage
-The main Python script VariantAlignment.py aims at performing variant compilation of bacterial genomes from a Python module genomic.py and a Conda environment PairedEndVariantCalling.
+The main Python script VariantAlignmentConda.py aims at performing variant compilation of bacterial genomes from a Python module genomic.py and a Conda environment PairedEndVariantCalling.
 - This workflow run the consolidation of g.vcf.gz files (CombineGVCFs) from PairedEndVariant.py, joint-calling (GenotypeGVCFs), hard filtering of SNPs and InDels (SelectVariants and VariantFiltration) and merging of SNPs and InDels (MergeVcfs) based on GATK4 for downstream phylogenomic analyses.
-- The main script VariantAlignment.py and module genomic.py (version 20201006, October 2020) were prepared and tested with Python and dependencies below.
-- The module genomic.py has to be with the present main script VariantAlignment.py to lunch it properly.
+- The main script VariantAlignmentConda.py and module genomic.py (version 20201006, October 2020) were prepared and tested with Python and dependencies below.
+- The module genomic.py has to be with the present main script VariantAlignmentConda.py to lunch it properly.
 - The Conda environment PairedEndVariantCalling has to be prepared as presented below.
 - The user can setup his own dependencies in his own bin.
 - The input g.vcf.gz files and indexed reference must be preferably prepared with PairedEndVariant.py.
 - The user can use as input his own g.vcf.gz files and indexed reference.
 # Dependencies
-The main script VariantAlignment.py and module genomic.py (version 20201006) were prepared and tested with Conda packages below (Name/Version/Build/Channel).
+The main script VariantAlignmentConda.py and module genomic.py (version 20201006) were prepared and tested with Conda packages below (Name/Version/Build/Channel).
 - python/3.8.5/h1103e12_9_cpython/conda-forge
 - biopython/1.78/py38h1e0a361_0/conda-forge
 - gatk4/4.1.8.1/py38_0/bioconda
