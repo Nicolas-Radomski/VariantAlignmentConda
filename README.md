@@ -5,7 +5,7 @@ The main Python script VariantAlignmentConda.py aims at performing variant compi
 - The module genomic.py has to be with the present main script VariantAlignmentConda.py to launch it properly.
 - The Conda environment PairedEndVariantCalling has to be prepared as presented below.
 - The user can setup his own dependencies in his own bin.
-- The input g.vcf.gz files and indexed reference must be preferably prepared with PairedEndVariant.py.
+- The input g.vcf.gz files and indexed reference must be preferably prepared with the main script PairedEndVariantConda.py.
 - The user can use as input his own g.vcf.gz files and indexed reference.
 # Dependencies
 The main script VariantAlignmentConda.py and module genomic.py (version 20201006) were prepared and tested with Conda packages below (Name/Version/Build/Channel).
