@@ -66,6 +66,8 @@ grep -v '#' /global/bio/projets/GAMeR/Nicolas-Radomski/PairedEndVariant/VariantC
 ```
 grep -v '#' /global/bio/projets/GAMeR/Nicolas-Radomski/PairedEndVariant/VariantCalling/7_alignment/filtered.indels.vcf | wc -l
 ```
+# Illustration
+![Workflow](https://github.com/Nicolas-Radomski/VariantAlignmentConda/blob/main/illustration.png)
 # Acknowledgment
 My old colleagues Arnaud Felten and Ludovic Mallet with whom I learned a lot about Python
 # Author
